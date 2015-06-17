@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/app.css">
+	</head>
+	<body ng-controller="RecipeCtrl">
+		<div class="container-fluid">
+			<div class="row">
+
+				<div class="col-md-2">
+					Search: <input	ng-model="query">
+				</div>
+
+				<div class="col-md-10">
+					<ul class="recipes">
+						<li ng-repeat="recipe in recipes | filter:query">
+							<span>{{recipe.name}}</span>
+							<p>{{recipe.ingredients}}</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
