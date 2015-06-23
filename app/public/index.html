@@ -1,34 +1,69 @@
 <!DOCTYPE html>
-<html ng-app="myApp">
+<html>
 	<head>
-		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
-		<script type="text/javascript" src="js/main.js"></script>
-		<script type="text/javascript" src="js/recipe.js"></script>
 		<link rel="stylesheet" type="text/css" href="css/main.css">
-		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/dest/all.js"></script>
 	</head>
 
-	<body ng-controller="RecipeCtrl">
+	<body ng-app="myApp">
 
 		<div class="container-fluid">
 
-			<div class="row">
+			
+
 				<div class="col-sm-2">
 					Search: <input	ng-model="query">
+						<div ng-controller="RecipeCtrl" ng-app="myApp">
+							<p>Total number of recipes: {{recipes.length}}</p>
+						</div>
 
-					<p>Total number of recipes: {{recipes.length}}</p>
+						<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Add New Recipe</button>
+
+						  <!-- Modal -->
+						  <div class="modal fade" id="myModal" role="dialog">
+						    <div class="modal-dialog">
+						    
+						      <!-- Modal content-->
+						      <div class="modal-content">
+						        <div class="modal-header">
+						          <button type="button" class="close" data-dismiss="modal">&times;</button>
+						          <h4 class="modal-title">Modal Header</h4>
+						        </div>
+						        <div class="modal-body">
+						          <p>Some text in the modal.</p>
+						        </div>
+						        <div class="modal-footer">
+						          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						        </div>
+						      </div>
+						      
+						    </div>
+						  </div>
+  
+
+
+
 				</div>
 
 				<div class="col-sm-10">
-					<ul class="recipes">
-						<li ng-repeat="recipe in recipes | filter:query">
-							<span>{{recipe.name}}</span>
-							<p>{{recipe.ingredients}}</p>
-						</li>
-					</ul>
+					<div>
+						<div ng-controller="RecipeCtrl">
+							<ul class="recipes">
+								<li ng-repeat="recipe in recipes | filter:query">
+									<span>{{recipe.name}}</span>
+									<p>{{recipe.ingredients}}</p>
+
+								</li>
+							</ul>
+						</div>
+					</div>
 				</div>
 
-			</div>
+			
 		</div>
 
 	</body>
