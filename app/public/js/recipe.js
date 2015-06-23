@@ -1,3 +1,5 @@
+/* RECIPE CTRL */
+
 app.controller('RecipeCtrl', function($scope) {
 	$scope.recipes = [
 	 {'name': 'Salmon',
@@ -15,7 +17,7 @@ app.controller('RecipeCtrl', function($scope) {
 	 {'name': 'Turkey Meatball in Curry Sauce',
 	  'ingredients': '1 lb-ground turkey, 6 oz-spinach, curry simmer sauce, carrots, sesame seeds'},
 	 {'name': 'Fish Taco',
-	  'ingredients': '2 filet-Tolapia, 1-avacado, cabbage,'},
+	  'ingredients': '2 filet-Tolapia, 1-avacado, cabbage, corn torillas'},
 	 {'name': 'Lentil Stew',
 	  'ingredients': '1 lb-sausage, 1-onion, 3-carrots, 4 stalk-celery, 2 cloves garlic, 2 cups-brown lentils, 2 Tbl-chicken base, 6 cup-water, 1/2 tsp-cayenne, 1 tsp-paprika, 1 tsp-cumin, 1 tsp-oregano, 10 oz-frozen spinach'},
 	 {'name': 'Thai Chicken Curry',
