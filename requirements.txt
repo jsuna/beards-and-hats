@@ -14,3 +14,11 @@ CSS.  Once I feel comfortable there I will move to adding Javascript.
 Status: I am going to work in HTML today.  My initial goal is to create a two column table.  The first column will be the recipe name
 with a link to the recipe.  The second column will be the ingredients.  For the CSS of this table I would like the Recipe title to be
 bold, each ingredient to be on a seperate line left justified.
+
+16 Jan 2015
+
+Update: okay so I have created a table thanks to some help from w3school.com and have been able
+to add a few items.  Now what I want to try and do is figure out some more styling for this 
+table.  I will begin by working on how to layout the ingredients so that each ingredient is on
+its own row.  That way when I add items in the quantity section I will be able to attach a 
+quantity needed to a particular ingredient
