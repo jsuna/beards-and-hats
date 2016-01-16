@@ -29,3 +29,10 @@ Update: I figured out how to use css and html to create a table that works now. 
 learned is that by using 'rowspan' I am able to expand various items in a table.  It acts 
 essentially like merging cells in excel.  Moving Forward!
 
+16 Jan 2015 12:18pm
+
+Update: Okay I feel pretty good that I am somewhat figuring a few things out.  I know more 
+seasoned coders are probably shaking their heads...fuck'em.  Anyways, now I need to figure 
+out how all this data that I have hard coded in can some how reside in a database.  That way
+I can look at updating, adding, deleting, or reading...aka CRUD.  I am going to take a break 
+from coding to do more research on how GET, PUT, POST, DELETE works.
