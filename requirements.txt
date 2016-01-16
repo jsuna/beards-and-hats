@@ -21,4 +21,11 @@ Update: okay so I have created a table thanks to some help from w3school.com and
 to add a few items.  Now what I want to try and do is figure out some more styling for this 
 table.  I will begin by working on how to layout the ingredients so that each ingredient is on
 its own row.  That way when I add items in the quantity section I will be able to attach a 
-quantity needed to a particular ingredient
+quantity needed to a particular ingredient.
+
+16 Jan 2015 12:01pm
+
+Update: I figured out how to use css and html to create a table that works now. What I just 
+learned is that by using 'rowspan' I am able to expand various items in a table.  It acts 
+essentially like merging cells in excel.  Moving Forward!
+
