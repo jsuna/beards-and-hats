@@ -1,16 +1,45 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Recipe App</title>
-  </head>
-  <body>
-    <table name="recipe">
-    	<tr name="title">
-    		<td>Salmon</td>
+<head>
+	<title>Recipe App</title>
+	<style>
+		table, th, td {
+	    	border: 1px solid black;
+	    	border-collapse: collapse;
+		}
+		th, td {
+	    	padding: 15px;
+		}
+		th {
+	    	text-align: left;
+		}
+	</style>
+</head>
+<body>
+	<h1>Recipe Application</h1>
+	<p>This is a quickly though of application to display recipes and ingredients for my weekly meal planning</p>
+   	<table>
+    	<tr>
+    		<th>Name</th>
+    		<th>Ingredients</th>
+    		<th>Quantity</th>
     	</tr>
-    	<tr name="ingredients">
+    	<tr>
+    		<td>Salmon</td>
     		<td>salmon filet, mustard, bread crumbs</td>
     	</tr>
+    	<tr>
+    		<td>Fish Taco</td>
+    		<td>Tilapia, corn tortillas, cabbage, lime, avacado</td>
+    	</tr>
+    	<tr>
+    		<td>Greek Yogurt Chicken Salad</td>
+    		<td>Plain greek yogurt, fresh basil, artichoke hearts, pine nuts, red onion</td>
+    	</tr>
+    	<tr>
+    		<td>Southwest Chicken Skillet</td>
+    		<td>Shredded chicken, black beans, salsa, rice, chili powder</td>
+    	</tr>
     </table>
-  </body>
+</body>
 </html>
