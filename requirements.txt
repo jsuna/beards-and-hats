@@ -1,1 +1,6 @@
 Requirements Doc
+
+15 Jan 2016 - Initial thoughts
+I want to create a simple app to help me in my grocery shopping.
+
+Problem statement: When I meal plan I tend to pick from the same selection of meals I have had before and must generate shopping lists for each week.  Automating this process can be a time saver.
