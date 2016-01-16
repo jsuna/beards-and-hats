@@ -1,0 +1,8 @@
+Requirements Doc
+
+15 Jan 2016 - Initial thoughts
+I want to create a simple app to help me in my grocery shopping.
+
+Problem statement: When I meal plan I tend to pick from the same selection of meals I have had before and must generate shopping lists for each week.  Automating this process can be a time saver.
+
+Status: I do not know how to code at all.  Basic HTML and minimal CSS.  I am going to start with a clean slate and work on my HTML and CSS.  Once I feel comfortable there I will move to adding Javascript.
