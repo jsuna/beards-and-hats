@@ -43,3 +43,11 @@ Update: After thinking about it for a little bit and talking to a few engineers 
 decided to take a look at using PHP as the main languages for this application.  For a few reasons
 but the main one being that there are loads of resoruces that I have at my disposal by doing that.
 So this morning is all about learning more about CRUD and starting with some PHP code.
+
+17 Jan 2015 - 8:57am
+
+Update: Okay so I feel much better using xampp than I thought I would be.  I am now thinking that
+I should actually think about the DB structure before writing code just to write code.  By thinking
+things through on the database side I can just set everything up at once and be in good shape.
+So I am familiar with MYSQL but I need to think through the table setup and how each table is connected
+to one another.
