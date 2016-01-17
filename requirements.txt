@@ -36,3 +36,10 @@ seasoned coders are probably shaking their heads...fuck'em.  Anyways, now I need
 out how all this data that I have hard coded in can some how reside in a database.  That way
 I can look at updating, adding, deleting, or reading...aka CRUD.  I am going to take a break 
 from coding to do more research on how GET, PUT, POST, DELETE works.
+
+17 Jan 2015 - 8:33am
+
+Update: After thinking about it for a little bit and talking to a few engineers I know.  I have
+decided to take a look at using PHP as the main languages for this application.  For a few reasons
+but the main one being that there are loads of resoruces that I have at my disposal by doing that.
+So this morning is all about learning more about CRUD and starting with some PHP code.
