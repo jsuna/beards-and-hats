@@ -11,3 +11,20 @@ th {
   text-align: left;
 }
 
+form {
+    padding: 15px;
+    display: block;
+    width: 100px
+}
+
+div.username {
+    padding: 5px
+}
+
+div.password {
+    padding: 5px;
+}
+
+div.submit {
+    padding: 5px;
+}
