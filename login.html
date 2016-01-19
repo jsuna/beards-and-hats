@@ -1,7 +1,14 @@
+<?php
+include('login.php'); // Includes Login Script
+
+if(isset($_SESSION['login_user'])){
+header("location: profile.php");
+}
+?>
+
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="style.css">
-    include('login.php'); // Includes Login Script
   </head>
   <body>
     <form action=" ">
