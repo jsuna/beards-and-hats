@@ -1,4 +1,4 @@
-
+<?php
 include('login-code.php'); // Includes Login Script
 
 if(isset($_SESSION['login_user'])){
@@ -25,3 +25,4 @@ header("location: profile.php");
     </form>
   </body>
 </html>
+?>
