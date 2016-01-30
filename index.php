@@ -1,4 +1,5 @@
 <?php
+//using a PHP file to be served through apache server
 
 <html>
 <head>
