@@ -1,9 +1,9 @@
 <?php
-include('login-code.php'); // Includes Login Script
+    include('login-code.php'); // Includes Login Script
 
-if(isset($_SESSION['login_user'])){
-header("location: profile.php");
-}
+    if(isset($_SESSION['login_user'])){
+    header("location: profile.php");
+    }
 ?>
 <html>
   <head>
