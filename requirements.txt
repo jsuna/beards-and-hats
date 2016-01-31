@@ -63,3 +63,12 @@ PHP into the form (http://www.formget.com/login-form-in-php/).  The main thing I
 is what a session is, why it is useful, and how I need to properly set it up.  Once I fully
 understand the session I am going to move onto the PHP POST information and error handling from
 filling out the form.
+
+31 Jan 2016 - 10:14am
+
+Update: Okay here we are!  I am back at it and have decided to use PHP still and a basic XAMPP
+setup for my app.  I currently just started serving all of my php code (thank god!).  I also
+learned a valuable lesson about how to use PHP and HTML.  Essentially you can have both in the
+same file however for apache to serve the file correctly all the php <? php ?> should be set
+and then you can use <html></html>. For the casual viewer this might not make sense but for me...
+it does.

@@ -1,6 +1,6 @@
 <?php
 //using a PHP file to be served through apache server
-
+?>
 <html>
 <head>
 	<title>Recipe App</title>
@@ -95,4 +95,3 @@
 </body>
 </html>
 
-?>
