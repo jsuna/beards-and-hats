@@ -10,14 +10,18 @@
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
+      
+      <?php if($error){?>
+          <div class="error"> <?php echo $error; ?> </div>
+      <?php } ?>
     <form action=" " method="post">
         <div class="username">
             Username:
-            <input type="text" name="username" value="Username">
+            <input type="text" name="username" placeholder="Username">
         </div>
         <div class="password">
             Password:
-            <input type="text" name="password" value="Password">
+            <input type="text" name="password" placeholder="Password">
         </div>
         <div class="submit">
             <input type="submit" name="submit" value="Login">

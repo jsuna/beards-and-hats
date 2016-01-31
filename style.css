@@ -28,3 +28,10 @@ div.password {
 div.submit {
     padding: 5px;
 }
+
+div.error {
+    border: 1px solid red;
+    background-color: salmon;
+    color: white;
+    padding: 10px;
+}
