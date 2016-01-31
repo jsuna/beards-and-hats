@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
-    <form action=" ">
+    <form action=" " method="post">
         <div class="username">
             Username:
             <input type="text" name="username" value="Username">
