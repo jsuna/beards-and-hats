@@ -9,13 +9,13 @@ for each week.  Automating this process can be a time saver.
 Status: I do not know how to code at all.  Basic HTML and minimal CSS.  I am going to start with a clean slate and work on my HTML and
 CSS.  Once I feel comfortable there I will move to adding Javascript.
 
-16 Jan 2015 - Plan for the day
+16 Jan 2016 - Plan for the day
 
 Status: I am going to work in HTML today.  My initial goal is to create a two column table.  The first column will be the recipe name
 with a link to the recipe.  The second column will be the ingredients.  For the CSS of this table I would like the Recipe title to be
 bold, each ingredient to be on a seperate line left justified.
 
-16 Jan 2015
+16 Jan 2016
 
 Update: okay so I have created a table thanks to some help from w3school.com and have been able
 to add a few items.  Now what I want to try and do is figure out some more styling for this 
@@ -23,9 +23,52 @@ table.  I will begin by working on how to layout the ingredients so that each in
 its own row.  That way when I add items in the quantity section I will be able to attach a 
 quantity needed to a particular ingredient.
 
-16 Jan 2015 12:01pm
+16 Jan 2016 12:01pm
 
 Update: I figured out how to use css and html to create a table that works now. What I just 
 learned is that by using 'rowspan' I am able to expand various items in a table.  It acts 
 essentially like merging cells in excel.  Moving Forward!
 
+16 Jan 2016 12:18pm
+
+Update: Okay I feel pretty good that I am somewhat figuring a few things out.  I know more 
+seasoned coders are probably shaking their heads...fuck'em.  Anyways, now I need to figure 
+out how all this data that I have hard coded in can some how reside in a database.  That way
+I can look at updating, adding, deleting, or reading...aka CRUD.  I am going to take a break 
+from coding to do more research on how GET, PUT, POST, DELETE works.
+
+17 Jan 2016 - 8:33am
+
+Update: After thinking about it for a little bit and talking to a few engineers I know.  I have
+decided to take a look at using PHP as the main languages for this application.  For a few reasons
+but the main one being that there are loads of resoruces that I have at my disposal by doing that.
+So this morning is all about learning more about CRUD and starting with some PHP code.
+
+17 Jan 2016 - 8:57am
+
+Update: Okay so I feel much better using xampp than I thought I would be.  I am now thinking that
+I should actually think about the DB structure before writing code just to write code.  By thinking
+things through on the database side I can just set everything up at once and be in good shape.
+So I am familiar with MYSQL but I need to think through the table setup and how each table is connected
+to one another.
+
+18 Jan 2016 - 9:53pm
+
+Update: First I am an idiot...I had the wrong date for all of my timestamps so I had to fix that.
+Okay now that I got that off my chest.  In talking with a programer friend (Jason) I was advised
+to focus on one thing at a time.  Meaning I had all these 'great' ideas but in reality i should
+just get the login page working.  So my update is that I have developed a form via HTML and have
+updated the CSS for that form.  I am now using the following resource to learn about how to add
+PHP into the form (http://www.formget.com/login-form-in-php/).  The main thing I am starting to learn
+is what a session is, why it is useful, and how I need to properly set it up.  Once I fully
+understand the session I am going to move onto the PHP POST information and error handling from
+filling out the form.
+
+31 Jan 2016 - 10:14am
+
+Update: Okay here we are!  I am back at it and have decided to use PHP still and a basic XAMPP
+setup for my app.  I currently just started serving all of my php code (thank god!).  I also
+learned a valuable lesson about how to use PHP and HTML.  Essentially you can have both in the
+same file however for apache to serve the file correctly all the php <? php ?> should be set
+and then you can use <html></html>. For the casual viewer this might not make sense but for me...
+it does.
