@@ -1,4 +1,6 @@
 <?php
+	include('connectdb.php'); // Includes database connection
+
 //using a PHP file to be served through apache server
 ?>
 <html>
