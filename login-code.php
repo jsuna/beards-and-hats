@@ -17,4 +17,6 @@ if (isset($_POST['submit'])) {
         //TODO connect to Database
     }
 }
+$_SESSION["login"] = $_POST;
+echo $_SESSION["login"];
 ?>
