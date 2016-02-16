@@ -2,7 +2,7 @@
     include('login-code.php'); // Includes Login Script
     include('connectdb.php'); // Includes database connection
 
-    if(isset($_SESSION['login_user'])){
+    if(isset($_SESSION["login"])){
     header("location: profile.php");
     }
 ?>
