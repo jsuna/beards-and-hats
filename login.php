@@ -3,7 +3,7 @@
     include('connectdb.php'); // Includes database connection
 
     if(isset($_SESSION["login"])){
-    header("location: profile.php");
+    header("location: home.php");
     }
 ?>
 <html>
