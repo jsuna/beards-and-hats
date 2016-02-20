@@ -1,6 +1,5 @@
 <?php
     include('login-code.php'); // Includes Login Script
-    include('connectdb.php'); // Includes database connection
 
     if(isset($_SESSION["login"])){
     header("location: home.php");
@@ -20,7 +19,7 @@
             </ul>                 
             <div id="tabs-1">
                 <form action="" method="post">
-                    <p><input id="email" name="email" type="text" placeholder="Email"></p>
+                    <p><input id="username" name="username" type="text" placeholder="Username"></p>
                     <p><input id="password" name="password" type="password" placeholder="Password">
                     <input name="action" type="hidden" value="login" /></p>
                     <p><input type="submit" value="Login" /></p>
@@ -29,6 +28,7 @@
             <div id="tabs-2">
                 <form action="" method="post">
                     <p><input id="name" name="name" type="text" placeholder="Name"></p>
+                    <p><input id="username" name="username" type="text" placeholder="Username"></p>
                     <p><input id="email" name="email" type="text" placeholder="Email"></p>
                     <p><input id="password" name="password" type="password" placeholder="Password">
                     <input name="action" type="hidden" value="signup" /></p>
