@@ -34,6 +34,7 @@
                     <input name="action" type="hidden" value="signup" /></p>
                     <p><input type="submit" value="Signup" /></p>
                 </form>
+                <?php echo($message)?>
             </div>
         </div>
     </body>

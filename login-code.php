@@ -8,13 +8,13 @@ if(isset($_POST['action']))
 {          
     if($_POST['action']=="login")
     {
-        $email      = mysqli_real_escape_string($dbconnect,$_POST['username']);
+        $username      = mysqli_real_escape_string($dbconnect,$_POST['username']);
         $password   = mysqli_real_escape_string($dbconnect,$_POST['password']);
-        $strSQL     = mysqli_query($dbconnect,"select name from users where username='".$username."' and password='".md5($password)."'");
+        $strSQL     = mysqli_query($dbconnect,"select name from user where username='$username' and password='md5($password)'");
         $Results    = mysqli_fetch_array($strSQL);
         if(count($Results)>=1)
         {
-            $message = $Results['name']." Login Sucessfully!!";
+            header('Location: home.php');
         }
         else
         {
@@ -27,11 +27,11 @@ if(isset($_POST['action']))
         $username   = mysqli_real_escape_string($dbconnect,$_POST['username']);
         $email      = mysqli_real_escape_string($dbconnect,$_POST['email']);
         $password   = mysqli_real_escape_string($dbconnect,$_POST['password']);
-        //$query      = "SELECT email FROM users where email='$email'";
+        //$query      = "SELECT email FROM user where email='$email'";
         //echo($query);
-        $result     = mysqli_query($dbconnect,"SELECT email FROM users where email='$email'");
-        echo($result);
+        $result     = mysqli_query($dbconnect,"SELECT email FROM user where email='$email'" );
         $numResults = mysqli_num_rows($result);
+        echo($numResults);
         if (!filter_var($email, FILTER_VALIDATE_EMAIL)) // Validate email address
         {
             $message =  "Invalid email address please type a valid email!!";
@@ -42,7 +42,7 @@ if(isset($_POST['action']))
         }
         else
         {
-            mysql_query("INSERT into users(name,email,password) values('$name','$email','md5($password)')");
+            mysqli_query($dbconnect,"INSERT into user(name,username,email,password) values('$name','$username','$email','md5($password)')");
             $message = "Signup Sucessfully!!";
         }
     }
