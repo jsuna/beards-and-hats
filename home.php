@@ -15,84 +15,84 @@
    	<table>
     	<tr>
     		<th>Name</th>
-            <th>Ingredients</th>
-            <th>Quantity</th>
+    		<th>Ingredients</th>
+    		<th>Quantity</th>
     	</tr>
     	<tr>
     		<td rowspan="3">Salmon</td>
-            <td>Salmon filet</td>
-            <td>2</td>
+    		<td>Salmon filet</td>
+    		<td>2</td>
     	</tr>
         <tr>
-            <td>Mustard</td>
-            <td>1 Tbsp</td>
+        	<td>Mustard</td>
+        	<td>1 Tbsp</td>
         </tr>
         <tr>
-            <td>Bread Crumbs</td>
-            <td>cover the top</td>
+        	<td>Bread Crumbs</td>
+        	<td>cover the top</td>
         </tr>
     	<tr>
     		<td rowspan="5">Fish Taco</td>
-            <td>Tilapia filets</td>
-            <td>2</td>
+    		<td>Tilapia filets</td>
+    		<td>2</td>
     	</tr>
         <tr>
-            <td>Corn Tortillas</td>
-            <td>1 bag</td>
+        	<td>Corn Tortillas</td>
+        	<td>1 bag</td>
         </tr>
         <tr>
-            <td>Cabbage</td>
-            <td>1 pre-mix bag</td>
+        	<td>Cabbage</td>
+        	<td>1 pre-mix bag</td>
         </tr>
         <tr>
-            <td>Lime</td>
-            <td>1</td>
+        	<td>Lime</td>
+        	<td>1</td>
         </tr>
         <tr>
-            <td>Avacado</td>
-            <td>1</td>
+        	<td>Avacado</td>
+        	<td>1</td>
         </tr>
     	<tr>
     		<td rowspan="5">Greek Yogurt Chicken Salad</td>
-            <td>Plain Greek Yogurt</td>
-            <td>8 oz</td>
+    		<td>Plain Greek Yogurt</td>
+    		<td>8 oz</td>
     	</tr>
         <tr>
-            <td>Fresh Basil</td>
-            <td>2 leaves</td>
+        	<td>Fresh Basil</td>
+        	<td>2 leaves</td>
         </tr>
         <tr>
-            <td>Artichoke Hearts</td>
-            <td>8 oz</td>
+        	<td>Artichoke Hearts</td>
+        	<td>8 oz</td>
         </tr>
         <tr>
-            <td>Pine Nuts</td>
-            <td>2 Tbsp</td>
+        	<td>Pine Nuts</td>
+        	<td>2 Tbsp</td>
         </tr>
         <tr>
-            <td>Red Onion</td>
-            <td>1</td>
+        	<td>Red Onion</td>
+        	<td>1</td>
         </tr>
     	<tr>
     		<td rowspan="5">Southwest Chicken Skillet</td>
-            <td>Shredded Chicken</td>
-            <td>1 cup</td>
+        	<td>Shredded Chicken</td>
+        	<td>1 cup</td>
     	</tr>
         <tr>
-            <td>Black Beans</td>
-            <td>1 can</td>
+        	<td>Black Beans</td>
+        	<td>1 can</td>
         </tr>
         <tr>
-            <td>Rice</td>
-            <td>1 cup</td>
+        	<td>Rice</td>
+        	<td>1 cup</td>
         </tr>
         <tr>
-            <td>Salsa</td>
-            <td>1 cup</td>
+        	<td>Salsa</td>
+        	<td>1 cup</td>
         </tr>
         <tr>
-            <td>Chili Powder</td>
-            <td>1 Tbsp</td>
+        	<td>Chili Powder</td>
+        	<td>1 Tbsp</td>
         </tr>
     </table>
 </body>
