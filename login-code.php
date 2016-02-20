@@ -31,7 +31,6 @@ if(isset($_POST['action']))
         //echo($query);
         $result     = mysqli_query($dbconnect,"SELECT email FROM user where email='$email'" );
         $numResults = mysqli_num_rows($result);
-        echo($numResults);
         if (!filter_var($email, FILTER_VALIDATE_EMAIL)) // Validate email address
         {
             $message =  "Invalid email address please type a valid email!!";
