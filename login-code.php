@@ -27,9 +27,9 @@ if(isset($_POST['action']))
         $username   = mysqli_real_escape_string($dbconnect,$_POST['username']);
         $email      = mysqli_real_escape_string($dbconnect,$_POST['email']);
         $password   = mysqli_real_escape_string($dbconnect,$_POST['password']);
-        $query      = "SELECT email FROM users where email='$email'";
-        echo($query);
-        $result     = mysqli_query($dbconnect,$query);
+        //$query      = "SELECT email FROM users where email='$email'";
+        //echo($query);
+        $result     = mysqli_query($dbconnect,"SELECT email FROM users where email='$email'");
         echo($result);
         $numResults = mysqli_num_rows($result);
         if (!filter_var($email, FILTER_VALIDATE_EMAIL)) // Validate email address
