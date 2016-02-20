@@ -1,5 +1,6 @@
 <?php
 	include('connectdb.php'); // Includes database connection
+	include('header.php');
 
 //using a PHP file to be served through apache server
 ?>
