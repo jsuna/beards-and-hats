@@ -8,10 +8,57 @@
 <head>
 	<title>Recipe App</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 </head>
 <body>
 	<h1>Recipe Application</h1>
 	<p>This is a quickly though of application to display recipes and ingredients for my weekly meal planning</p>
+	
+	<button id="create-user">Create new user</button>
+	<div id="dialog-form" title="Create new user">
+  		<p class="validateTips">All form fields are required.</p>
+ 
+  		<form>
+    			<fieldset>
+      				<label for="recipe-title">Recipe Title</label>
+      				<input type="text" name="recipe-title" id="recipe-title" placeholder="Recipe Title" class="text ui-widget-content ui-corner-all">
+      				<label for="ingridient-title">Ingridient</label>
+      				<input type="text" name="ingridient" id="ingridient" placeholder="Ingridient" class="text ui-widget-content ui-corner-all">
+      				<label for="quantity">Quantity</label>
+      				<input type="quantity" name="quantity" id="password" placeholder="Quantity" class="text ui-widget-content ui-corner-all">
+ 
+      				<!-- Allow form submission with keyboard without duplicating the dialog button -->
+      				<input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
+    			</fieldset>
+  		</form>
+	</div>
+ 
+ 
+	<div id="users-contain" class="ui-widget">
+  		<h1>Existing Users:</h1>
+  		<table id="users" class="ui-widget ui-widget-content">
+    			<thead>
+      				<tr class="ui-widget-header ">
+        				<th>Name</th>
+        				<th>Email</th>
+        				<th>Password</th>
+      				</tr>
+    			</thead>
+    			<tbody>
+      				<tr>
+        				<td>John Doe</td>
+        				<td>john.doe@example.com</td>
+        				<td>johndoe1</td>
+      				</tr>
+    			</tbody>
+  		</table>
+	</div>
+	
+	
+	
+	
    	<table>
     	<tr>
     		<th>Name</th>
