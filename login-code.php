@@ -1,20 +1,49 @@
 <?php
+
 session_start();  //Starting session
 
-$error=''; // Variable To Store Error Message
-if (isset($_POST['submit'])) {
-    if (empty($_POST['username']) || empty($_POST['password'])) {
-        $error = "Username or Password is invalid";
-    }
-    else
+include('connectdb.php'); // Includes database connection
+
+if(isset($_POST['action']))
+{          
+    if($_POST['action']=="login")
     {
-        $username=$_POST['username'];
-        $password=$_POST['password'];
-        /* My understanding is if username OR password is blank give error 
-        message 'Username or Password is invalid' otherwise POST username and password */
-        echo $username;
-        echo $password;
-        //TODO connect to Database
+        $username      = mysqli_real_escape_string($dbconnect,$_POST['username']);
+        $password   = mysqli_real_escape_string($dbconnect,$_POST['password']);
+        $strSQL     = mysqli_query($dbconnect,"select name from user where username='$username' and password='md5($password)'");
+        $Results    = mysqli_fetch_array($strSQL);
+        if(count($Results)>=1)
+        {
+            header('Location: home.php');
+        }
+        else
+        {
+            $message = "Invalid email or password!!";
+        }        
+    }
+    elseif($_POST['action']=="signup")
+    {
+        $name       = mysqli_real_escape_string($dbconnect,$_POST['name']);
+        $username   = mysqli_real_escape_string($dbconnect,$_POST['username']);
+        $email      = mysqli_real_escape_string($dbconnect,$_POST['email']);
+        $password   = mysqli_real_escape_string($dbconnect,$_POST['password']);
+        //$query      = "SELECT email FROM user where email='$email'";
+        //echo($query);
+        $result     = mysqli_query($dbconnect,"SELECT email FROM user where email='$email'" );
+        $numResults = mysqli_num_rows($result);
+        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) // Validate email address
+        {
+            $message =  "Invalid email address please type a valid email!!";
+        }
+        elseif($numResults>=1)
+        {
+            $message = $email." Email already exist!!";
+        }
+        else
+        {
+            mysqli_query($dbconnect,"INSERT into user(name,username,email,password) values('$name','$username','$email','md5($password)')");
+            $message = "Signup Sucessfully!!";
+        }
     }
 }
 ?>

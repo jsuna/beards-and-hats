@@ -1,32 +1,41 @@
 <?php
     include('login-code.php'); // Includes Login Script
-    include('connectdb.php'); // Includes database connection
 
-    if(isset($_SESSION['login_user'])){
-    header("location: profile.php");
+    if(isset($_SESSION["login"])){
+    header("location: home.php");
     }
 ?>
 <html>
-  <head>
-    <link rel="stylesheet" type="text/css" href="style.css">
-  </head>
-  <body>
-      
-      <?php if($error){?>
-          <div class="error"> <?php echo $error; ?> </div>
-      <?php } ?>
-    <form action=" " method="post">
-        <div class="username">
-            Username:
-            <input type="text" name="username" placeholder="Username">
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+  
+    <body>
+        <!-- Login and Signup forms -->
+        <div id="tabs">
+            <ul>
+                <li><a href="#tabs-1">Login</a></li>
+                <li><a href="#tabs-2" class="active">Signup</a></li>
+            </ul>                 
+            <div id="tabs-1">
+                <form action="" method="post">
+                    <p><input id="username" name="username" type="text" placeholder="Username"></p>
+                    <p><input id="password" name="password" type="password" placeholder="Password">
+                    <input name="action" type="hidden" value="login" /></p>
+                    <p><input type="submit" value="Login" /></p>
+                </form>
+            </div>
+            <div id="tabs-2">
+                <form action="" method="post">
+                    <p><input id="name" name="name" type="text" placeholder="Name"></p>
+                    <p><input id="username" name="username" type="text" placeholder="Username"></p>
+                    <p><input id="email" name="email" type="text" placeholder="Email"></p>
+                    <p><input id="password" name="password" type="password" placeholder="Password">
+                    <input name="action" type="hidden" value="signup" /></p>
+                    <p><input type="submit" value="Signup" /></p>
+                </form>
+                <?php echo($message)?>
+            </div>
         </div>
-        <div class="password">
-            Password:
-            <input type="text" name="password" placeholder="Password">
-        </div>
-        <div class="submit">
-            <input type="submit" name="submit" value="Login">
-        </div>
-    </form>
-  </body>
+    </body>
 </html>
