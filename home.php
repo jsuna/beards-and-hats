@@ -142,5 +142,6 @@
         	<td>1 Tbsp</td>
         </tr>
     </table>
+    <script src="modal.js"></script>
 </body>
 </html>
