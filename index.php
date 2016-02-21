@@ -1,6 +1,6 @@
 <?php
 //using a PHP file to be served through apache server
-	include(/src/homepage/header.php);
+	include('src/homepage/header.php');
 ?>
 <html>
 	<head>
