@@ -2,7 +2,7 @@
     include('login-code.php'); // Includes Login Script
 
     if(isset($_SESSION["login"])){
-    header("location: home.php");
+    header("location: ../home/home.php");
     }
 ?>
 <html>

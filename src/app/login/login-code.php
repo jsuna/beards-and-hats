@@ -2,7 +2,7 @@
 
 session_start();  //Starting session
 
-include('connectdb.php'); // Includes database connection
+include('../../db/connectdb.php'); // Includes database connection
 
 if(isset($_POST['action']))
 {          
@@ -14,7 +14,7 @@ if(isset($_POST['action']))
         $Results    = mysqli_fetch_array($strSQL);
         if(count($Results)>=1)
         {
-            header('Location: home.php');
+            header('Location: ../home/home.php');
         }
         else
         {

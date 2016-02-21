@@ -1,6 +1,5 @@
-<? php
-
-echo("Made it to the recipe page!");
+<?php
+    include('../header/header.php');
 
 ?>
 
@@ -9,5 +8,7 @@ echo("Made it to the recipe page!");
   </header>
   
   <body>
+      <input type="button" value="Back" onClick="window.location.href = '../home/home.php'"></input>
+      <p>Made it to the recipe page!</p>
   </body>
 </html>
