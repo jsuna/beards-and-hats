@@ -10,6 +10,10 @@
 	    	<a href="src/app/login/login.php">Login</a>
 	</head>
 	<body>
+		<header>
+			<div class="navigation">
+			</div>
+		</header>
 	</body>
 </html>
 
