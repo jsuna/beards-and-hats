@@ -1,3 +1,3 @@
 <html>
-  <a href="logout-code.php">Logout</a>
+  <a href="../logout/logout-code.php">Logout</a>
 </html>
