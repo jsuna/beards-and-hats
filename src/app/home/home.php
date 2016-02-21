@@ -13,7 +13,7 @@
 	<h1>Recipe Application</h1>
 	<p>This is a quickly though of application to display recipes and ingredients for my weekly meal planning</p>
 	
-	<button id="create-recipe">Create new recipe</button>
+	<input type="button" value="Create New Recipe" onClick="window.location = ../recipe/add-recipe.php">
 	
    	<table>
     	<tr>
