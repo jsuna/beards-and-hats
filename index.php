@@ -7,7 +7,6 @@
 	<head>
 		<title>Recipe App</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
-	    	<a href="src/app/login/login.php">Login</a>
 	</head>
 	<body>
 		<header>

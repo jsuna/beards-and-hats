@@ -16,8 +16,8 @@
         </div>
             
         <p> 
-        <input type="button" value="Add Passenger" onClick="addRow('dataTable')" /> 
-        <input type="button" value="Remove Passenger" onClick="deleteRow('dataTable')" /> 
+        <input type="button" value="Add Ingredient" onClick="addRow('dataTable')" /> 
+        <input type="button" value="Remove Ingredient" onClick="deleteRow('dataTable')" /> 
         <p>(All acions apply only to entries with check marked check boxes only.)</p>
         </p>
         
