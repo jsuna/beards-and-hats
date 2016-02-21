@@ -51,5 +51,6 @@
                 </tr>
             </tbody>
         </table>
+        <script src="recipe.js"></script>
   </body>
 </html>
