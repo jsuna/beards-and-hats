@@ -8,6 +8,7 @@ if(isset($_POST['action']))
         $recipe      = mysqli_real_escape_string($dbconnect,$_POST['recipe']);
         $ingredient   = mysqli_real_escape_string($dbconnect,$_POST['ingredient']);
         $quantity   = mysqli_real_escape_string($dbconnect,$_POST['quantity']);
+        $measurement   = mysqli_real_escape_string($dbconnect,$_POST['measurement']);
         $strSQL     = mysqli_query($dbconnect,"select name from user where username='$username' and password='md5($password)'");
         $Results    = mysqli_fetch_array($strSQL);
         if(count($Results)>=1)
