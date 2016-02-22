@@ -12,7 +12,7 @@
         <input type="button" value="Back" onClick="window.location.href = '../home/home.php'"></input>
         <div id="add-recipe">
             <form action="" method="post">
-                <p><input id="recipe-name" name="recipe-name" type="text" placeholder="Recipe Name"></p>
+                <p><input id="recipe" name="recipe" type="text" placeholder="Recipe Name"></p>
             </form>
         </div>
             
@@ -28,7 +28,7 @@
                     <td ><input type="checkbox" name="chk[]" checked="checked" /></td>
                     <td>
                         <label>Ingredient</label>
-                        <input type="text" name="ingredient-name">
+                        <input type="text" name="ingredient">
                     </td>
                     <td>
                         <label for="quantity">Quantity</label>
