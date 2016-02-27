@@ -45,8 +45,7 @@ else (
         $ingredient     = mysqli_real_escape_string($dbconnect,$_POST['ingredient']);
         $quantity       = mysqli_real_escape_string($dbconnect,$_POST['quantity']);
         $measurement    = mysqli_real_escape_string($dbconnect,$_POST['measurement']);
-        //$query      = "SELECT email FROM user where email='$email'";
-        //echo($query);
+
         $result     = mysqli_query($dbconnect,"SELECT recipe FROM recipe where recipe='$recipe'" );
         $numResults = mysqli_num_rows($result);
         if ($numResults>=1) // Validate recipe exists
