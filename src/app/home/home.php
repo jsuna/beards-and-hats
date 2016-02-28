@@ -1,7 +1,8 @@
 <?php
-	include('../../db/connectdb.php'); // Includes database connection
-	include('../header/header.php');
-
+    include('../../db/connectdb.php'); // Includes database connection
+    include('home-code.php');
+    include('../header/header.php');
+echo '<pre>';print_r($results); echo '</pre>';
 //using a PHP file to be served through apache server
 ?>
 <html>
