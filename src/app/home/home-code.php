@@ -6,8 +6,8 @@
   echo "<table>";
     while($row = mysql_fetch_array($result)){   //Creates a loop to loop through results
       echo '<tr>';
-      echo '<td>'. $row['name'] . '</td>';
-      echo '<td>'. $row['ingredient_name'] . '</td>';
+      echo '<td>'. $row['recipe_name'] . '</td>';
+      echo '<td>'. $row['ingredient'] . '</td>';
       echo '<td>'. $row['quantity'] . '</td>';
       echo '<td>'. $row['measurement'] . '</td>';
       echo '</tr>';
