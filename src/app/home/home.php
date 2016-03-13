@@ -3,7 +3,7 @@
     include('home-code.php');
     include('../header/header.php');
 echo '<pre>';print_r($results); echo '</pre>';
-echo '<pre>';print_r($res); echo '</pre>';
+echo '<pre>';print_r($row); echo '</pre>';
 //using a PHP file to be served through apache server
 ?>
 <html>
