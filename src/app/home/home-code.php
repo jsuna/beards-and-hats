@@ -11,10 +11,10 @@
     
     while($row = mysqli_fetch_array($result)){   //Creates a loop to loop through results
       echo '<tr>';
-      echo '<td>'. $row['recipe_name'] . '</td>';
-      echo '<td>'. $row['ingredient'] . '</td>';
-      echo '<td>'. $row['quantity'] . '</td>';
-      echo '<td>'. $row['measurement'] . '</td>';
+      echo '<td>'. $row['r.name'] . '</td>';
+      echo '<td>'. $row['i.ingredient'] . '</td>';
+      echo '<td>'. $row['i.quantity'] . '</td>';
+      echo '<td>'. $row['i.measurement'] . '</td>';
       echo '</tr>';
     }
   }
