@@ -3,6 +3,7 @@
     include('home-code.php');
     include('../header/header.php');
 echo '<pre>';print_r($results); echo '</pre>';
+echo '<pre>';print_r($res); echo '</pre>';
 //using a PHP file to be served through apache server
 ?>
 <html>
@@ -19,14 +20,14 @@ echo '<pre>';print_r($results); echo '</pre>';
 	
 
 	
-	<thead>
+	<table>
 		<tr>
 			<th>Recipe Name</th>
 			<th>Ingredient</th>
 			<th>Quantity</th>
 			<th>Measurement</th>
 		</tr>
-	</thead>
+	</table>
 	
    	<table>
     	<tr>
