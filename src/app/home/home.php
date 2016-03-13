@@ -17,14 +17,16 @@ echo '<pre>';print_r($results); echo '</pre>';
 	<input type="button" value="Create New Recipe" onClick="window.location.href = '../recipe/recipe.php'"></input>
 	
 	
-	<table>
+
+	
+	<thead>
 		<tr>
 			<th>Recipe Name</th>
 			<th>Ingredient</th>
 			<th>Quantity</th>
 			<th>Measurement</th>
 		</tr>
-	</table>
+	</thead>
 	
    	<table>
     	<tr>
