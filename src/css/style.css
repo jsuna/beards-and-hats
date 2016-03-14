@@ -1,3 +1,21 @@
+table {
+    width: 100%;
+}
+
+table ul {
+    list-style: none;
+}
+
+table div.quantity {
+    width: 30%;
+    float: left;
+}
+
+table div.name {
+    width: 70%;
+    float: left;
+}
+
 table, th, td {
   border: 1px solid black;
   border-collapse: collapse;
@@ -37,7 +55,7 @@ div.error {
 }
 
 body { 
-    font-size: 62.5%; 
+    font-size: 14px; 
 }
 
 label, input { 

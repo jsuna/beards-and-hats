@@ -1,7 +1,9 @@
 <?php
     include('../header/header.php');
     include('add-recipe-code.php');
-
+    include('edit-recipe-code.php');
+    
+    
 ?>
 
 <html>
@@ -19,7 +21,7 @@
             <p> 
                 <input type="button" value="Add Ingredient" onClick="addRow('dataTable')" /> 
                 <input type="button" value="Remove Ingredient" onClick="deleteRow('dataTable')" /> 
-                <p>(All acions apply only to entries with check marked check boxes only.)</p>
+                <p>(All acions apply only to entries with check marked check boxes only).</p>
             </p>
             
             <table id="dataTable" class="form" border="1">
@@ -48,7 +50,7 @@
                     </tr>
                 </tbody>
             </table>
-            
+            <input type="hidden" value="" name="recipe_id" />
             <input type="submit" value="save" name="action" />
         </form>
         <script src="recipe.js"></script>
