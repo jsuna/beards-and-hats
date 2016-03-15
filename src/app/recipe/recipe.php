@@ -16,6 +16,15 @@
         <form action="" method="post">
             <div id="add-recipe">
                 <p><input id="recipe" name="recipe" type="text" placeholder="Recipe Name"></p>
+                <?php
+                
+                if (count($recipes)) {
+                // foreach takes an array then you can use 'as' to alias the index and the value per iteration
+                    foreach($recipes as $id => $recipe) {       
+                        echo '<input id="recipe" name="recipe" type="text">'.$recipe['name'].'</input>';
+                        
+                ?>
+                
             </div>
                 
             <p> 
