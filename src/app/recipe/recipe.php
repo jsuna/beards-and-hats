@@ -18,9 +18,9 @@
                 <p><input id="recipe" name="recipe" type="text" placeholder="Recipe Name"></p>
                 <?php
                 
-                if (count($recipes)) {
+                if (count($recipe_id)) {
                 // foreach takes an array then you can use 'as' to alias the index and the value per iteration
-                    foreach($recipes as $id => $recipe) {       
+                    foreach($recipe_id as $id => $recipe) {       
                         echo '<input id="recipe" name="recipe" type="text">'.$recipe['name'].'</input>';
                         
                 ?>
