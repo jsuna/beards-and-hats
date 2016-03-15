@@ -3,7 +3,20 @@
     include('add-recipe-code.php');
     include('edit-recipe-code.php');
     
-    
+    echo '<pre>';print_r($recipe_id); echo '</pre>';
+    echo '<pre>';print_r($recipe, $row = 'name'); echo '</pre>';
+    echo '<input id="recipe" name="recipe" type="text">';
+    if (count($recipe)) {
+    // foreach takes an array then you can use 'as' to alias the index and the value per iteration
+        foreach ($results as $id => $recipeName) {       
+            echo $recipeName['recipeName'];
+            echo '</input>';
+        }
+        echo '<pre>';print_r($recipeName, 'name'); echo '</pre>';
+    }
+    echo '<pre>';print_r($recipe); echo '</pre>';
+    echo '<pre>';print_r($recipe, 'name'); echo '</pre>';
+
 ?>
 
 <html>
@@ -16,14 +29,8 @@
         <form action="" method="post">
             <div id="add-recipe">
                 <p><input id="recipe" name="recipe" type="text" placeholder="Recipe Name"></p>
-                <?php
-                
-                if (count($recipe_id)) {
-                // foreach takes an array then you can use 'as' to alias the index and the value per iteration
-                    foreach($recipe_id as $id => $recipe) {       
-                        echo '<input id="recipe" name="recipe" type="text">'.$recipe['name'].'</input>';
-                        
-                ?>
+
+
                 
             </div>
                 
@@ -64,4 +71,5 @@
         </form>
         <script src="recipe.js"></script>
   </body>
+  
 </html>

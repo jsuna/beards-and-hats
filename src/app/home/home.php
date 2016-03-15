@@ -18,7 +18,6 @@
 	<input type="button" value="Create New Recipe" onClick="window.location.href = '../recipe/recipe.php'"></input>
 	
 <?php
-
     echo '<table>';
     echo '<tr><th>Recipe</th><th>Ingredients</th><th>Action</th></tr>';
     if (count($recipes)) {
