@@ -5,7 +5,10 @@ include('../../db/connectdb.php'); // Includes database connection
 $recipe = array();
 if (isset($_GET['action'])) {
     $recipe_id = $_GET['id'];
-
+    
+    $p = "SELECT name FROM recipe WHERE id=$recipe_id";
+    $recipeName = mysqli_query($dbconnect,$p);
+    
     $q = "SELECT r.name as recipeName, i.* FROM recipe r INNER JOIN ingredient i ON r.id=i.recipe_id WHERE r.id=$recipe_id";
     $results = mysqli_query($dbconnect,$q);
     

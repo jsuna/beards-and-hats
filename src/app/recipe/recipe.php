@@ -4,18 +4,19 @@
     include('edit-recipe-code.php');
     
     echo '<pre>';print_r($recipe_id); echo '</pre>';
-    echo '<pre>';print_r($recipe, $row = 'name'); echo '</pre>';
-    echo '<input id="recipe" name="recipe" type="text">';
-    if (count($recipe)) {
+    echo '<pre>';print_r($recipeName); echo '</pre>';
+    // echo '<pre>';print_r($recipeName, 'name'); echo '</pre>';
+    // echo '<input id="recipe" name="recipe" type="text">';
+    // if (count($recipe)) {
     // foreach takes an array then you can use 'as' to alias the index and the value per iteration
-        foreach ($results as $id => $recipeName) {       
-            echo $recipeName['recipeName'];
-            echo '</input>';
-        }
-        echo '<pre>';print_r($recipeName, 'name'); echo '</pre>';
-    }
-    echo '<pre>';print_r($recipe); echo '</pre>';
-    echo '<pre>';print_r($recipe, 'name'); echo '</pre>';
+    //     foreach ($results as $id => $recipeName) {       
+    //         echo $recipeName['recipeName'];
+    //         echo '</input>';
+    //     }
+    // }
+     echo '<pre>';print_r($recipe); echo '</pre>';
+    // echo '<pre>';print_r($recipe, 'name'); echo '</pre>';
+    echo '<pre>';print_r($row, 'recipeName'); echo '</pre>';
 
 ?>
 
@@ -28,7 +29,7 @@
         <input type="button" value="Back" onClick="window.location.href = '../home/home.php'"></input>
         <form action="" method="post">
             <div id="add-recipe">
-                <p><input id="recipe" name="recipe" type="text" placeholder="Recipe Name" value="<?php echo $recipeName; ?>></p>
+                <p><input id="recipe" name="recipe" type="text" placeholder="Recipe Name" value="<?php echo $p; ?>"></input></p>
 
 
                 
