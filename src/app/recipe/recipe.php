@@ -28,7 +28,7 @@
         <input type="button" value="Back" onClick="window.location.href = '../home/home.php'"></input>
         <form action="" method="post">
             <div id="add-recipe">
-                <p><input id="recipe" name="recipe" type="text" placeholder="Recipe Name"></p>
+                <p><input id="recipe" name="recipe" type="text" placeholder="Recipe Name" value="<?php echo $recipeName; ?>></p>
 
 
                 
