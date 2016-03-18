@@ -12,8 +12,7 @@
     } else {
         
     }
-
-
+echo '<pre>';print_r($recipe, $row = 'name'); echo '</pre>'
 
 ?>
 
@@ -30,9 +29,9 @@
                 <p><input id="recipe" name="recipe" type="text" placeholder="Recipe Name" 
                 value="<?php 
                     if (!empty($recipe_id)) {
-                        echo $recipeName['recipeName']
+                        echo $recipeName['recipeName'];
                     } else {
-                    }; 
+                    }
                 ?>"></input></p>
 
 
