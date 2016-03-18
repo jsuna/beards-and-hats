@@ -3,10 +3,14 @@
     include('add-recipe-code.php');
     include('edit-recipe-code.php');
 
-    if (count($recipe)) {
-    // foreach takes an array then you can use 'as' to alias the index and the value per iteration
-        foreach ($results as $id => $recipeName) {       
+    if (!empty($recipe_id)) {
+        if (count($recipe)) {
+        // foreach takes an array then you can use 'as' to alias the index and the value per iteration
+            foreach ($results as $id => $recipeName) {       
+            }
         }
+    } else {
+        
     }
 
 
