@@ -27,7 +27,13 @@
         <form action="" method="post">
             <div id="add-recipe">
                 
-                <p><input id="recipe" name="recipe" type="text" placeholder="Recipe Name" value="<?php echo $recipeName['recipeName']; ?>"></input></p>
+                <p><input id="recipe" name="recipe" type="text" placeholder="Recipe Name" 
+                value="<?php 
+                    if (!empty($recipe_id)) {
+                        echo $recipeName['recipeName']
+                    } else {
+                    }; 
+                ?>"></input></p>
 
 
                 
