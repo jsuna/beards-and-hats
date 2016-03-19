@@ -50,15 +50,39 @@ echo '<pre>';print_r($recipe, $row = 'name'); echo '</pre>'
                         <td ><input type="checkbox" name="chkbox[]" checked="checked" /></td>
                         <td>
                             <label>Ingredient</label>
-                            <input type="text" name="ingredients[0][ingredient]">
+                            <input type="text" name="ingredients[0][ingredient]"
+                            value="<?php 
+                                if (!empty($recipe_id)) {
+                                    foreach($ingredient as $result) {
+                                        echo $result['name'];
+                                    }
+                                } else {
+                                }
+                            ?>">
                         </td>
                         <td>
                             <label for="quantity">Quantity</label>
-                            <input type="text" class="small"  name="ingredients[0][quantity]">
+                            <input type="text" class="small"  name="ingredients[0][quantity]"
+                            value="<?php 
+                                if (!empty($recipe_id)) {
+                                    foreach($ingredient as $result) {
+                                        echo $result['quantity'];
+                                    }
+                                } else {
+                                }
+                            ?>">
                         </td>
                         <td>
                             <label for="measurement">Measurement</label>
-                            <select name="ingredients[0][measurement]">
+                            <select name="ingredients[0][measurement]"
+                            value="<?php 
+                                if (!empty($recipe_id)) {
+                                    foreach($ingredient as $result) {
+                                        echo $result['measurement'];
+                                    }
+                                } else {
+                                }
+                            ?>">
                                 <option>....</option>
                                 <option>cup</option>
                                 <option>ounce</option>
