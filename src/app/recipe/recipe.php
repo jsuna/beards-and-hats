@@ -12,8 +12,11 @@
     } else {
         
     }
-echo '<pre>';print_r($recipe, $row = 'name'); echo '</pre>'
-
+echo '<pre>';print_r($results); echo '</pre>';
+echo '<pre>';print_r($recipe); echo '</pre>';
+echo '<pre>';print_r($recipe, 'recipeName'); echo '</pre>';
+$addRow = '<script type="text/javascript">, addRow(tableID); </script>';
+echo '<pre>';print_r($addRow); echo '</pre>';
 ?>
 
 <html>
@@ -28,13 +31,13 @@ echo '<pre>';print_r($recipe, $row = 'name'); echo '</pre>'
                 
                 <p><input id="recipe" name="recipe" type="text" placeholder="Recipe Name" 
                 value="<?php 
+                
+                    $test = $recipeName['recipeName'];
                     if (!empty($recipe_id)) {
-                        echo $recipeName['recipeName'];
+                        echo $test;
                     } else {
                     }
                 ?>"></input></p>
-
-
                 
             </div>
                 
@@ -53,11 +56,13 @@ echo '<pre>';print_r($recipe, $row = 'name'); echo '</pre>'
                             <input type="text" name="ingredients[0][ingredient]"
                             value="<?php 
                                 if (!empty($recipe_id)) {
-                                    foreach($ingredient as $result) {
-                                        echo $result['name'];
+                                    foreach($recipe[$test] as $result) {
+                                        echo $result['0'];
+                                        echo $addRow;                     
                                     }
                                 } else {
                                 }
+                              
                             ?>">
                         </td>
                         <td>
@@ -65,8 +70,9 @@ echo '<pre>';print_r($recipe, $row = 'name'); echo '</pre>'
                             <input type="text" class="small"  name="ingredients[0][quantity]"
                             value="<?php 
                                 if (!empty($recipe_id)) {
-                                    foreach($ingredient as $result) {
-                                        echo $result['quantity'];
+                                    foreach($recipe[$test] as $result) {
+                                        echo $result['1'];
+                                        echo $addRow;  
                                     }
                                 } else {
                                 }
@@ -77,8 +83,9 @@ echo '<pre>';print_r($recipe, $row = 'name'); echo '</pre>'
                             <select name="ingredients[0][measurement]"
                             value="<?php 
                                 if (!empty($recipe_id)) {
-                                    foreach($ingredient as $result) {
-                                        echo $result['measurement'];
+                                    foreach($recipe[$test] as $result) {
+                                        echo $result['3'];
+                                        echo $addRow;  
                                     }
                                 } else {
                                 }
