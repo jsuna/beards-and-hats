@@ -58,7 +58,7 @@ echo '<pre>';print_r($addRow); echo '</pre>';
                                 if (!empty($recipe_id)) {
                                     foreach($recipe[$test] as $result) {
                                         echo $result['0'];
-                                        echo $addRow;                     
+                                        echo '<script type="text/javascript">, addRow(tableID); </script>';;                     
                                     }
                                 } else {
                                 }
