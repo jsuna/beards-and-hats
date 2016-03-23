@@ -13,6 +13,17 @@
 			<div class="navigation">
 			</div>
 		</header>
+		<div class="section-1"></div>
+		<div class="section-2"></div>
+			<div class="left-main"></div>
+				<div class="feature-1"></div>
+				<div class="feature-2"></div>
+				<div class="feature-3"></div>
+			<div class="right-main"></div>
+				<div class="feature-1"></div>
+				<div class="feature-2"></div>
+				<div class="feature-3"></div>
+		<div class="section-3"></div>
 	</body>
 </html>
 
