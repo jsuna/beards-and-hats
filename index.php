@@ -16,10 +16,12 @@
 		<div class="section-1"></div>
 		<div class="section-2"></div>
 			<div class="left-main"></div>
+				<h1>Test left side</h1>
 				<div class="feature-1"></div>
 				<div class="feature-2"></div>
 				<div class="feature-3"></div>
 			<div class="right-main"></div>
+				<h1>Testing right main</h1>
 				<div class="feature-1"></div>
 				<div class="feature-2"></div>
 				<div class="feature-3"></div>
