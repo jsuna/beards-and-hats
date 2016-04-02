@@ -3,7 +3,7 @@ if (!session_id()) session_start();  //Starting session
 include('../../db/connectdb.php'); // Includes database connection
 
 
-$recipe = array();
+$recipe = array('name'=>'', 'ingredients'=>array());
 if (isset($_GET['action'])) {
     $recipe_id = $_GET['id'];
     
@@ -17,12 +17,9 @@ if (isset($_GET['action'])) {
         while ($row = mysqli_fetch_array($results)) {
             $ingredient = array($row['name'],$row['quantity'],$row['measurement']); 
             
+            if (!$recipe['name']) $recipe['name'] = $row['recipeName'];
             
-            if (!isset($recipe[$row['recipeName']])) {
-                $recipe[$row['recipeName']] = array($ingredient);
-            } else {
-                $recipe[$row['recipeName']][] = $ingredient;
-            }
+            $recipe['ingedients'][] = $ingregdient;
         }
     }
 }
